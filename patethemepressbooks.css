@@ -548,26 +548,29 @@ table {
   margin-top: 1em;
   margin-bottom: 1em;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 0.9em;
+  font-size: 12pt;
   hyphens: none;
   line-height: 1.1em;
   text-align: left;
   border-collapse: collapse;
   border-top: 1px solid #000;
-  border-right: 0 none #000;
+  border-right: 1px solid #000;
   border-bottom: 1px solid #000;
-  border-left: 0 none #000; }
+  border-left: 1px solid #000; }
   table p {
     text-align: left; }
   table caption {
     margin-bottom: 0.5em;
+    font-family: 'OldSansBlack', sans-serif;
     font-weight: bold;
     line-height: 1.1em; }
   table.lines {
     border-color: #000; }
   table.lines tr {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
+    border-left: 0.5px solid lightgray;
+    border-right: 0.5px solid lightgray;
     border-color: #000; }
   table.lines th {
     border-color: #000; }
@@ -635,44 +638,44 @@ tr {
   border-bottom: 0 none #000; }
 
 .twocolumn {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 0.85em;
-  line-height: 1.2em;
-  text-align: justify;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 10pt;
+  line-height: 1.1em;
+  text-align: left;
   text-indent: 0;
   column-gap: 1em;
   column-count: 2;
   column-fill: balance; }
   .twocolumn p {
     font-size: inherit;
-    line-height: 1.2em;
-    text-align: justify;
+    line-height: 1.1em;
+    text-align: left;
     text-indent: 0; }
   .twocolumn p + p {
-    margin-top: 1em; }
+    margin-top: 0.5em; }
 
 .threecolumn {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 0.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 10pt;
   text-indent: 0;
-  text-align: justify;
-  line-height: 1.2em;
+  text-align: left;
+  line-height: 1.1em;
   column-gap: 1em;
   column-count: 3;
   column-fill: balance; }
   .threecolumn p {
     font-size: inherit;
-    line-height: 1.2em;
-    text-align: justify;
+    line-height: 1.1em;
+    text-align: left;
     text-indent: 0; }
   .threecolumn p + p {
-    margin-top: 1em; }
+    margin-top: 0.5em; }
 
 .first-character, .firstcharacter {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 250%;
+  font-size: 15pt;
   font-style: normal;
   font-weight: bold;
   line-height: 0.7em; }
@@ -735,7 +738,7 @@ p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 1.5em;
-  font-size: 0.95em; }
+  font-size: 8pt; }
 
 .endnotes {
   margin-left: 1.5em;
@@ -750,7 +753,7 @@ p {
   .endnotes ol {
     margin-top: 0.4em;
     margin-left: 0;
-    font-size: 0.85em;
+    font-size: 8pt;
     list-style-position: outside; }
   .endnotes li {
     padding-left: 0;
@@ -780,7 +783,7 @@ p {
 aside, .aside {
   padding: 0.9em 0 0.9em 0;
   margin: 1em 10% 1em 10%;
-  line-height: 1.5em;
+  line-height: 1.2em;
   text-indent: 0;
   border-top: 0;
   border-right: 1px solid;
@@ -799,8 +802,8 @@ aside, .aside {
   text-indent: 0;
   border-top: 0;
   border-bottom: 0;
-  border-left: solid;
-  border-right: solid;
+  border-left: groove;
+  border-right: outset;
   padding-top: 0;
   padding-bottom: 0;
   page-break-inside: avoid;
@@ -936,7 +939,7 @@ hr {
     display: block;
     margin: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 0.875em;
+    font-size: 11pt;
     font-style: normal;
     font-weight: bold; }
   .textbox.learning-objectives, .learning-objectives.bcc-box, .bcc-highlight {
@@ -954,7 +957,7 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
@@ -973,7 +976,7 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12em;
       font-style: italic;
       font-weight: normal;
       margin: 0;
@@ -1001,7 +1004,7 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
@@ -1020,7 +1023,7 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
@@ -1048,7 +1051,7 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
@@ -1067,7 +1070,7 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
@@ -1095,7 +1098,7 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
@@ -1114,7 +1117,7 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
@@ -1132,7 +1135,7 @@ hr {
   float: outside;
   margin: 1em 0 1em 0;
   margin-inside: 1em;
-  max-width: 25%; }
+  max-width: 33.3%; }
 
 .glossary-term {
   font-weight: bold; }
@@ -1159,7 +1162,7 @@ p img.alignright {
   p img.alignright figcaption, p img.alignright .wp-caption-text {
     text-align: left; }
 p img.aligncenter, p img.alignleft, p img.alignright {
-  max-width: 50%; }
+  max-width: 100%; }
 
 figcaption, .wp-caption-text {
   font-family: 'OldSansBlack', sans-serif;
@@ -1179,7 +1182,7 @@ img {
   display: inline-block;
   height: auto;
   margin: 0;
-  max-width: 95%;
+  max-width: 100%;
   padding: 0;
   page-break-inside: avoid !important;
   prince-image-resolution: auto, normal; }
@@ -1198,7 +1201,7 @@ img.mathjax {
     padding-left: 0;
     margin: 0.5em 0 4.4444444444em;
     text-align: left;
-    width: 95% !important; }
+    width: 100% !important; }
     .wp-caption.alignnone figcaption, .wp-nocaption.alignnone figcaption, .wp-caption.alignnone .wp-caption-text, .wp-nocaption.alignnone .wp-caption-text {
       text-align: left; }
   .wp-caption.aligncenter, .wp-nocaption.aligncenter {
@@ -1256,9 +1259,9 @@ img.mathjax {
     margin-left: auto;
     margin-right: auto; }
   .interactive-content p {
-    font-size: 0.9em;
-    font-style: italic;
-    font-family: 'OldSansBlack', sans-serif;
+    font-size: 11pt;
+    font-style: underline;
+    font-family: 'OldSansBlack Underline', sans-serif;
     font-weight: normal;
     margin-bottom: 0;
     text-indent: 0;
@@ -1272,7 +1275,7 @@ img.mathjax {
 
 div.bibliography p {
   padding-left: 2em;
-  font-size: 0.9em;
+  font-size: 11pt;
   text-indent: -2em; }
 
 .index .ugc, .index .ugc p {
@@ -1285,7 +1288,7 @@ div.index div {
   margin-bottom: 4em; }
 div.index p, div.index .indent, div.index .no-indent {
   padding-left: 2em;
-  font-size: 0.9em;
+  font-size: 11pt;
   text-align: left;
   text-indent: -2em; }
 div.index .sub-entry {
@@ -1294,7 +1297,7 @@ div.index .sub-entry {
 .back-matter .license-attribution p {
   text-align: left;
   line-height: 1.4em;
-  font-size: 0.8em;
+  font-size: 10pt;
   font-style: italic;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -1309,8 +1312,8 @@ div.index .sub-entry {
 
 .chapter .license-attribution p {
   text-align: left;
-  line-height: 1.4em;
-  font-size: 0.8em;
+  line-height: 1.1em;
+  font-size: 10pt;
   font-style: italic;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -1327,17 +1330,18 @@ div.index .sub-entry {
 #copyright-page {
   margin-top: 2cm;
   margin-right: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  page-break-inside: avoid; }
   #copyright-page .ugc {
     float: none; }
     #copyright-page .ugc p {
       margin-bottom: 1em;
-      font-family: 'Ibarra Real Nova', serif;
-      font-size: 0.8888888889em;
+      font-family: 'OldBlackSans', sans-serif;
+      font-size: 9pt;
       font-style: normal;
       font-weight: normal;
       hyphens: none;
-      line-height: 1.5555555556em;
+      line-height: 1.1em;
       text-align: left;
       text-indent: 0; }
 
@@ -1348,29 +1352,31 @@ div.dedication, section.dedication {
   div.dedication p, section.dedication p {
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 13.5pt;
     font-style: italic;
     font-weight: normal;
-    line-height: 1.4em;
-    text-align: center; }
+    line-height: 1.2em;
+    text-align: center; 
+    page-break-inside: avoid;}
 
 div.epigraph, section.epigraph {
   margin-top: 3cm;
   margin-right: 10%;
-  margin-left: 10%; }
+  margin-left: 10%;
+  page-break-inside: avoid; }
   div.epigraph p, section.epigraph p {
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 13pt;
     font-style: italic;
     font-weight: normal;
-    line-height: 1.4em;
+    line-height: 1.2em;
     text-align: center; }
 
 .front-matter .license-attribution p, #copyright-page .license-attribution p {
   text-align: left;
-  line-height: 1.4em;
-  font-size: 0.8em;
+  line-height: 1.1em;
+  font-size: 10pt;
   font-style: italic;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -1394,7 +1400,7 @@ div.epigraph, section.epigraph {
 #half-title-page > h1.title {
   margin-top: 3cm;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1.5em;
+  font-size: 12pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
@@ -1408,7 +1414,7 @@ h1.title {
   margin-right: 0;
   margin-left: 0;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 2.6666666667em;
+  font-size: 15pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
@@ -1425,7 +1431,7 @@ h2.subtitle {
   margin-right: 0;
   margin-left: 0;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1.6666666667em;
+  font-size: 14pt;
   font-style: italic;
   font-weight: normal;
   hyphens: none;
@@ -1442,7 +1448,7 @@ h3.author {
   margin-right: 0;
   margin-left: 0;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1.6666666667em;
+  font-size: 13pt;
   font-style: italic;
   font-weight: normal;
   hyphens: none;
@@ -1469,7 +1475,7 @@ h4.publisher {
   float: none;
   margin: 0 0 0.5em 0;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 0.9em;
+  font-size: 12pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
@@ -1487,7 +1493,7 @@ h5.publisher-city {
   margin-left: 0;
   margin-right: 0;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 0.9em;
+  font-size: 10pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
@@ -1511,7 +1517,7 @@ h5.publisher-city {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 2.6666666667em;
+    font-size: 15pt;
     font-style: normal;
     font-weight: normal;
     hyphens: none;
@@ -1526,7 +1532,7 @@ h5.publisher-city {
     display: block;
     margin-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1.6666666667em;
+    font-size: 14pt;
     font-style: italic;
     font-weight: normal;
     hyphens: none;
@@ -1539,7 +1545,7 @@ h5.publisher-city {
     display: block;
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 13.5;
     font-style: normal;
     font-weight: bold;
     hyphens: none;
@@ -1567,7 +1573,7 @@ h5.publisher-city {
     display: inline;
     margin: 0 0 0 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 2.6666666667em;
+    font-size: 15pt;
     font-style: normal;
     font-weight: normal;
     hyphens: none;
@@ -1582,7 +1588,7 @@ h5.publisher-city {
     margin: 0 0 0 0;
     padding-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 2.6666666667em;
+    font-size: 15pt;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -1605,7 +1611,7 @@ h5.publisher-city {
     display: block;
     margin-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1.6666666667em;
+    font-size: 14pt;
     font-style: italic;
     font-weight: normal;
     hyphens: none;
@@ -1618,7 +1624,7 @@ h5.publisher-city {
     display: block;
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 14pt;
     font-style: normal;
     font-weight: bold;
     hyphens: none;
@@ -1643,17 +1649,17 @@ h5.publisher-city {
   margin: 0 auto 0 auto;
   padding-bottom: 0;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 0.9em;
+  font-size: 12pt;
   font-style: italic;
   font-weight: normal;
-  line-height: 1.5555555556em;
+  line-height: 1.1em;
   text-align: left;
   text-indent: 0; }
   .aphorism cite, blockquote.aphorism cite {
     display: block;
     margin-right: 0;
     margin-left: 0;
-    font-size: 0.9em;
+    font-size: 12pt;
     font-style: italic;
     font-variant: normal;
     font-weight: normal;
@@ -1672,7 +1678,7 @@ h5.publisher-city {
     margin-bottom: 0;
     padding-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 2.6666666667em;
+    font-size: 15pt;
     font-style: normal;
     font-weight: normal;
     border-bottom: none 0 initial;
@@ -1686,7 +1692,7 @@ h5.publisher-city {
     display: block;
     margin-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1.6666666667em;
+    font-size: 14pt;
     font-style: italic;
     font-weight: normal;
     hyphens: none;
@@ -1699,7 +1705,7 @@ h5.publisher-city {
     display: block;
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 13.5pt;
     font-style: normal;
     font-weight: bold;
     hyphens: none;
@@ -1744,7 +1750,7 @@ h5.publisher-city {
     margin: 0 0 0 0;
     padding-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 15pt;
+    font-size: 11.5pt;
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;
@@ -1760,7 +1766,7 @@ h5.publisher-city {
   .part-title-wrap .part-title {
     margin: 0 0 0 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 2em;
+    font-size: 11.5;
     font-style: normal;
     font-weight: normal;
     hyphens: none;
@@ -1886,7 +1892,8 @@ meta[name="pb-publisher"] {
 meta[name="pb-publisher-city"] {
   string-set: book-publisher-city attr('content'); }
 
-meta
+meta[name="doi"] {
+  string-set: chapter-doi attr('content'); }
 
 .short-book-title {
   visibility: hidden; }
@@ -2628,6 +2635,14 @@ meta
     font-style: normal;
     font-family: 'OldSansBlack', sans-serif;
     font-size: 8pt; }
+  @right {
+    content: string(chapter-doi);
+    text-align: center;
+    font-weight:normal;
+    font-style: normal;
+    font-family: 'OldSansBlack', sans-serif;
+    font-size: 8pt;
+    color: black; }
   @bottom-right {
     padding-bottom: 0.4in;
     font-family: 'OldSansBlack', sans-serif;
@@ -2850,6 +2865,14 @@ meta
     font-style: normal;
     font-family: 'OldSansBlack', sans-serif;
     font-size: 8pt; }
+  @right {
+    content: string(chapter-doi);
+    text-align: center;
+    font-weight:normal;
+    font-style: normal;
+    font-family: 'OldSansBlack', sans-serif;
+    font-size: 8pt;
+    color: black; } 
   @bottom-right {
     padding-bottom: 0.4in;
     font-family: 'OldSansBlack', sans-serif;
@@ -3424,7 +3447,7 @@ meta
   display: block; }
 #toc .front-matter {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 11pt;
+  font-size: 13pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
@@ -3432,7 +3455,7 @@ meta
   text-transform: none; }
 #toc .front-matter .chapter-subtitle {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 10.5pt;
+  font-size: 11.5pt;
   font-style: italic;
   font-weight: normal;
   text-transform: none; }
@@ -3444,7 +3467,7 @@ meta
   text-transform: none; }
 #toc .part {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 12.5em;
+  font-size: 12.5pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
@@ -3455,14 +3478,14 @@ meta
   display: none; }
 #toc .chapter {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 11.5pt;
+  font-size: 12pt;
   font-style: normal;
   font-weight: normal;
   line-height: 1.1em;
   text-transform: none; }
 #toc .chapter .chapter-subtitle {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 10.5pt;
+  font-size: 11.5pt;
   font-style: italic;
   font-weight: normal;
   text-transform: none;
