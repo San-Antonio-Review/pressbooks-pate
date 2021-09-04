@@ -789,7 +789,7 @@ aside, .aside {
 .pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right {
   display: inline-block;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 14pt;
+  font-size: 13pt;
   font-style: normal;
   font-weight: bold;
   hyphens: none;
@@ -800,8 +800,8 @@ aside, .aside {
   border-bottom: 0;
   border-left: solid;
   border-right: solid;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
   page-break-inside: avoid;
   break-inside: avoid; }
 
@@ -813,13 +813,13 @@ aside, .aside {
   float: left;
   margin: 1em 1em 1em 1em;
   text-align: center;
-  width: 55%; }
+  width: 47%; }
 
 .pullquote-right, .pullquote--right {
   float: right;
   margin: 1em 1em 1em 1em;
   text-align: center;
-  width: 55%; }
+  width: 47%; }
 
 @supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
   .pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right {
@@ -830,8 +830,9 @@ aside, .aside {
   width: 45%;
   padding: 1em 1em 1em 1em;
   margin-top: 0.5em;
-  margin-right: 0;
-  margin-left: 1em;
+  margin-bottom: 0.5.em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   font-size: 0.9em;
   font-style: italic;
   font-weight: normal;
@@ -868,7 +869,7 @@ hr {
       display: block;
       font-size: 1.1em;
       text-align: center;
-      content: '\066D'; }
+      content: '\1F66D'; }
 
 .section-break {
   margin-top: 1em;
@@ -908,8 +909,8 @@ hr {
   font-size: 9pt;
   font-style: normal;
   font-weight: normal;
-  word-spacing: normal;
-  letter-spacing: normal;
+  word-spacing: tight;
+  letter-spacing: tight;
   line-height: 1.1;
   text-align: left;
   text-indent: 0;
@@ -935,12 +936,12 @@ hr {
     display: block;
     margin: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 0.875em;
+    font-size: 8pt;
     font-style: normal;
     font-weight: bold; }
   .textbox.learning-objectives, .learning-objectives.bcc-box, .bcc-highlight {
-    padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
-    margin-bottom: 1.35em;
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
     border-radius: 0;
@@ -953,14 +954,14 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 13.5pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
       background: #757575;
       text-align: left; }
   .textbox.textbox--learning-objectives, .textbox--learning-objectives.bcc-box {
-    margin-bottom: 1.35em;
+    margin-bottom: 1em;
     padding: 0;
     border-radius: 0;
     border-style: none;
@@ -972,11 +973,11 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 13pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+      padding: 1em 1em 1em 1;
       text-align: left; }
       .textbox.textbox--learning-objectives .textbox__header h1, .textbox--learning-objectives.bcc-box .textbox__header h1, .textbox.textbox--learning-objectives .textbox__header h2, .textbox--learning-objectives.bcc-box .textbox__header h2, .textbox.textbox--learning-objectives .textbox__header h3, .textbox--learning-objectives.bcc-box .textbox__header h3, .textbox.textbox--learning-objectives .textbox__header h4, .textbox--learning-objectives.bcc-box .textbox__header h4, .textbox.textbox--learning-objectives .textbox__header h5, .textbox--learning-objectives.bcc-box .textbox__header h5, .textbox.textbox--learning-objectives .textbox__header h6, .textbox--learning-objectives.bcc-box .textbox__header h6 {
         color: #fff; }
@@ -984,10 +985,10 @@ hr {
         text-indent: 0; }
     .textbox.textbox--learning-objectives .textbox__content, .textbox--learning-objectives.bcc-box .textbox__content {
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em; }
+      padding: 1em 1em 1em 1em; }
   .textbox.key-takeaways, .key-takeaways.bcc-box, .bcc-success {
-    padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
-    margin-bottom: 1.35em;
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
     border-radius: 0;
@@ -1000,14 +1001,14 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
       background: #c1c1c1;
       text-align: left; }
   .textbox.textbox--key-takeaways, .textbox--key-takeaways.bcc-box {
-    margin-bottom: 1.35em;
+    margin-bottom: 1em;
     padding: 0;
     border-radius: 0;
     border-style: none;
@@ -1019,11 +1020,11 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12.5pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+      padding: 1 em 1em 1em 1em;
       text-align: left; }
       .textbox.textbox--key-takeaways .textbox__header h1, .textbox--key-takeaways.bcc-box .textbox__header h1, .textbox.textbox--key-takeaways .textbox__header h2, .textbox--key-takeaways.bcc-box .textbox__header h2, .textbox.textbox--key-takeaways .textbox__header h3, .textbox--key-takeaways.bcc-box .textbox__header h3, .textbox.textbox--key-takeaways .textbox__header h4, .textbox--key-takeaways.bcc-box .textbox__header h4, .textbox.textbox--key-takeaways .textbox__header h5, .textbox--key-takeaways.bcc-box .textbox__header h5, .textbox.textbox--key-takeaways .textbox__header h6, .textbox--key-takeaways.bcc-box .textbox__header h6 {
         color: #fff; }
@@ -1031,9 +1032,9 @@ hr {
         text-indent: 0; }
     .textbox.textbox--key-takeaways .textbox__content, .textbox--key-takeaways.bcc-box .textbox__content {
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em; }
+      padding: 1em 1em 1em 1em; }
   .textbox.exercises, .exercises.bcc-box, .bcc-info {
-    padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+    padding: 1em 1em 1em 1em;
     margin-bottom: 1.35em;
     margin-left: 0;
     margin-right: 0;
@@ -1047,14 +1048,14 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
       background: #969696;
       text-align: left; }
   .textbox.textbox--exercises, .textbox--exercises.bcc-box {
-    margin-bottom: 1.35em;
+    margin-bottom: 1em;
     padding: 0;
     border-radius: 0;
     border-style: none;
@@ -1066,11 +1067,11 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12.5pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+      padding: 1em 1em 1em 1em;
       text-align: left; }
       .textbox.textbox--exercises .textbox__header h1, .textbox--exercises.bcc-box .textbox__header h1, .textbox.textbox--exercises .textbox__header h2, .textbox--exercises.bcc-box .textbox__header h2, .textbox.textbox--exercises .textbox__header h3, .textbox--exercises.bcc-box .textbox__header h3, .textbox.textbox--exercises .textbox__header h4, .textbox--exercises.bcc-box .textbox__header h4, .textbox.textbox--exercises .textbox__header h5, .textbox--exercises.bcc-box .textbox__header h5, .textbox.textbox--exercises .textbox__header h6, .textbox--exercises.bcc-box .textbox__header h6 {
         color: #fff; }
@@ -1078,10 +1079,10 @@ hr {
         text-indent: 0; }
     .textbox.textbox--exercises .textbox__content, .textbox--exercises.bcc-box .textbox__content {
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em; }
+      padding: 1em 1em 1em 1em; }
   .textbox.examples, .examples.bcc-box {
-    padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
-    margin-bottom: 1.35em;
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
     border-radius: 0;
@@ -1094,14 +1095,14 @@ hr {
       margin: -1.1428571425em -1.1428571425em 1.1428571425em -1.1428571425em;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
-      font-size: 14.000000004pt;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       color: #fff;
       background: #6c6b6d;
       text-align: left; }
   .textbox.textbox--examples, .textbox--examples.bcc-box {
-    margin-bottom: 1.35em;
+    margin-bottom: 1em;
     padding: 0;
     border-radius: 0;
     border-style: none;
@@ -1113,11 +1114,11 @@ hr {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 12pt;
       font-style: italic;
       font-weight: normal;
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+      padding: 1em 1em 1em 1em;
       text-align: left; }
       .textbox.textbox--examples .textbox__header h1, .textbox--examples.bcc-box .textbox__header h1, .textbox.textbox--examples .textbox__header h2, .textbox--examples.bcc-box .textbox__header h2, .textbox.textbox--examples .textbox__header h3, .textbox--examples.bcc-box .textbox__header h3, .textbox.textbox--examples .textbox__header h4, .textbox--examples.bcc-box .textbox__header h4, .textbox.textbox--examples .textbox__header h5, .textbox--examples.bcc-box .textbox__header h5, .textbox.textbox--examples .textbox__header h6, .textbox--examples.bcc-box .textbox__header h6 {
         color: #fff; }
@@ -1125,7 +1126,7 @@ hr {
         text-indent: 0; }
     .textbox.textbox--examples .textbox__content, .textbox--examples.bcc-box .textbox__content {
       margin: 0;
-      padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em; }
+      padding: 1em 1em 1em 1em; }
 
 .textbox--sidebar {
   float: outside;
@@ -1255,7 +1256,7 @@ img.mathjax {
     margin-left: auto;
     margin-right: auto; }
   .interactive-content p {
-    font-size: 0.9em;
+    font-size: 10.5pt;
     font-style: italic;
     font-family: 'OldSansBlack', sans-serif;
     font-weight: normal;
@@ -1271,7 +1272,7 @@ img.mathjax {
 
 div.bibliography p {
   padding-left: 2em;
-  font-size: 0.9em;
+  font-size: 11pt;
   text-indent: -2em; }
 
 .index .ugc, .index .ugc p {
@@ -1284,7 +1285,7 @@ div.index div {
   margin-bottom: 4em; }
 div.index p, div.index .indent, div.index .no-indent {
   padding-left: 2em;
-  font-size: 0.9em;
+  font-size: 11pt;
   text-align: left;
   text-indent: -2em; }
 div.index .sub-entry {
@@ -1293,7 +1294,7 @@ div.index .sub-entry {
 .back-matter .license-attribution p {
   text-align: left;
   line-height: 1.4em;
-  font-size: 0.8em;
+  font-size: 10pt;
   font-style: italic;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -1331,12 +1332,12 @@ div.index .sub-entry {
     float: none; }
     #copyright-page .ugc p {
       margin-bottom: 1em;
-      font-family: 'Ibarra Real Nova', serif;
-      font-size: 0.8888888889em;
+      font-family: 'OldSansBlack', sans-serif;
+      font-size: 10pt;
       font-style: normal;
       font-weight: normal;
       hyphens: none;
-      line-height: 1.5555555556em;
+      line-height: 1.1em;
       text-align: left;
       text-indent: 0; }
 
@@ -1347,10 +1348,10 @@ div.dedication, section.dedication {
   div.dedication p, section.dedication p {
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 12pt;
     font-style: italic;
     font-weight: normal;
-    line-height: 1.4em;
+    line-height: 1.1em;
     text-align: center; }
 
 div.epigraph, section.epigraph {
@@ -1360,17 +1361,17 @@ div.epigraph, section.epigraph {
   div.epigraph p, section.epigraph p {
     margin-bottom: 1em;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 1em;
+    font-size: 12pt;
     font-style: italic;
     font-weight: normal;
-    line-height: 1.4em;
+    line-height: 1.1em;
     text-align: center; }
 
 .front-matter .license-attribution p, #copyright-page .license-attribution p {
   text-align: left;
-  line-height: 1.4em;
-  font-size: 0.8em;
-  font-style: italic;
+  line-height: 1.1em;
+  font-size: 10pt;
+  font-style: underline;
   margin-top: 2em;
   margin-bottom: 1em;
   page-break-inside: avoid;

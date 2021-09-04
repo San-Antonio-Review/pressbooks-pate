@@ -33,36 +33,36 @@ a {
   color: normal; }
 
 .print a {
-  color: initial;
+  color: black;
   text-decoration: none; 
 }
 
 body, .entry-content {
-  color: initial; }
+  color: black; }
 
 blockquote {
-  color: initial; }
+  color: black; }
 
 h1 {
-  color: initial; }
+  color: black; }
 
 h2 {
-  color: initial; }
+  color: black; }
 
 h3 {
-  color: initial; }
+  color: black; }
 
 h4 {
-  color: initial; }
+  color: black; }
 
 h5 {
-  color: initial; }
+  color: black; }
 
 h6 {
-  color: initial; }
+  color: black; }
 
 table {
-  color: initial; }
+  color: black; }
 
 table p {
   color: initial; }
@@ -149,7 +149,7 @@ div.sidebar {
 .blockquote, blockquote {
   margin: 1em 1em 1em 2.5em;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 10pt;
+  font-size: 9pt;
   font-style: normal;
   font-weight: normal;
   padding: 0em 0em 0em 0em;
@@ -164,7 +164,7 @@ body {
   font-size: 12pt;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.15em;
   word-wrap: break-word;
   overflow-wrap: break-word; }
 
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1em;
     padding-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 15pt;
+    font-size: 13.5pt;
     font-style: normal;
     font-weight: bold;
     line-height: 1.5em;
@@ -218,9 +218,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 0;
-    font-family: 'OldSansBlack', sans-serif;
+    font-family: 'OldSansBlack Underline', sans-serif;
     font-size: 12.75pt;
-    font-style: italic;
+    font-style: underline;
     font-weight: normal;
     line-height: 1.5em;
     text-align: left;
@@ -246,9 +246,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 0;
-    font-family: 'OldSansBlack', sans-serif;
+    font-family: 'OldSansBlack Underline', sans-serif;
     font-size: 12.25pt;
-    font-style: italic;
+    font-style: underline;
     font-weight: normal;
     line-height: 1.5em;
     text-align: left;
@@ -262,14 +262,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: underline; }
 
-.print a {
-  text-decoration: none; }
-content a:link:after, 
-content a:visited:after { 
-  content: " (" attr(href) ") "; 
-    font-family: 'OldSansBlack', sans-serif;
-  font-size: 10pt; 
-}
+.print a::after {
+  content: " (" attr(href) ")"; 
+  font-family: 'OldSansBlack', sans-serif;
+  font-size: 10pt; }
+
+.print a:link:after { 
+  content: " (" attr(href) ")"; 
+  font-family: 'OldSansBlack', sans-serif;
+  font-size: 10pt; }
 
 ol {
   margin-top: 1.4285714286em;
@@ -2956,7 +2957,15 @@ meta
     color: initial;
     text-transform: none; } }
 @page chapter:left {
-   @top {
+  @top-left {
+    content: string(book-subtitle); 
+    font-family: 'OldSansBlack', sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    letter-spacing: tight;
+    word-spacing: tight;
+    text-transform: capitalize;}
+  @top {
     content: string(book-title);
     text-align: center;
     font-weight:normal;
@@ -3013,7 +3022,7 @@ meta
     color: initial;
     text-transform: none; } }
 @page introduction:right {
-   @top {
+  @top {
     content: string(book-title);
     text-align: center;
     font-weight:normal;
@@ -3032,7 +3041,7 @@ meta
     color: initial;
     text-transform: none; } }
 @page post-introduction:right {
-   @top {
+  @top {
     content: string(book-title);
     text-align: center;
     font-weight:normal;
@@ -3051,7 +3060,7 @@ meta
     color: initial;
     text-transform: none; } }
 @page part:right {
-   @top {
+  @top {
     content: string(book-title);
     text-align: center;
     font-weight:normal;
@@ -3070,13 +3079,21 @@ meta
     color: initial;
     text-transform: none; } }
 @page chapter:right {
-   @top {
+  @top {
     content: string(book-title);
     text-align: center;
     font-weight:normal;
     font-style: normal;
     font-family: 'OldSansBlack', sans-serif;
     font-size: 8pt; }
+  @top-left {
+    content: string(book-subtitle); 
+    font-family: 'OldSansBlack', sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    letter-spacing: tight;
+    word-spacing: tight;
+    text-transform: capitalize;}
   @bottom-right {
     padding-bottom: 0.4in;
     font-family: 'OldSansBlack', sans-serif;
@@ -3089,7 +3106,7 @@ meta
     color: initial;
     text-transform: none; } }
 @page back-matter:right {
-   @top {
+  @top {
     content: string(book-title);
     text-align: center;
     font-weight:normal;
@@ -3379,7 +3396,7 @@ meta
     content: "" string(book-title) " - Always read free at sareview.org." '\A0\A0|\A0\A0' counter(page); } }
 
 #toc ul {
-  line-height: 1.55em;
+  line-height: 1.1em;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -3407,73 +3424,73 @@ meta
   display: block; }
 #toc .front-matter {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 1em;
+  font-size: 11pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
-  line-height: 1.55em;
+  line-height: 1.1em;
   text-transform: none; }
 #toc .front-matter .chapter-subtitle {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 10.5pt;
   font-style: italic;
   font-weight: normal;
   text-transform: none; }
 #toc .front-matter .chapter-author {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 11pt;
   font-style: normal;
   font-weight: normal;
   text-transform: none; }
 #toc .part {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1.2em;
+  font-size: 12.5em;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
-  line-height: 1.55em;
+  line-height: 1.1em;
   margin-top: 1.5em;
   text-transform: none; }
 #toc .part.invisible {
   display: none; }
 #toc .chapter {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 11.5pt;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.55em;
+  line-height: 1.1em;
   text-transform: none; }
 #toc .chapter .chapter-subtitle {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 10.5pt;
   font-style: italic;
   font-weight: normal;
   text-transform: none;
   margin-top: 0.2em; }
 #toc .chapter .chapter-author {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 11pt;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
   margin-top: 0.2em; }
 #toc .back-matter {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 11pt;
   font-style: normal;
   font-weight: normal;
   hyphens: none;
-  line-height: 1.55em;
+  line-height: 1.1em;
   text-transform: none; }
 #toc .back-matter .chapter-subtitle {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 11pt;
   font-style: italic;
   font-weight: normal;
   text-transform: none; }
 #toc .back-matter .chapter-author {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 1em;
+  font-size: 11pt;
   font-style: normal;
   font-weight: normal;
   text-transform: none; }
@@ -3488,10 +3505,10 @@ meta
 #toc .sections {
   margin-top: 0.5em; }
 #toc .section {
-  font-size: 1em;
+  font-size: 12pt;
   font-style: italic;
   font-weight: normal;
-  line-height: 1.55em;
+  line-height: 1.1em;
   margin-top: 0.5em; }
 
 h3.front-matter-number, h3.part-number, h3.chapter-number, h3.back-matter-number {
@@ -3615,7 +3632,7 @@ h3.front-matter-number, h3.part-number, h3.chapter-number, h3.back-matter-number
 #toc .part {
   margin-right: 1.5cm; }
 #toc .part a::before {
-  content: 'Part' '\A0' counter(part,upper-roman) '.\A0';
+  content: 'Section' '\A0' counter(part,upper-roman) '.\A0';
   display: none;
   text-align: left; }
 #toc .chapter a::before {
