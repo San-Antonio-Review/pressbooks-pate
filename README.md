@@ -5,4 +5,10 @@ Named for its creator and founding editor and publisher of _San Antonio Review_ 
 
 Headings are in OldBlackSans. Body font family is Ibarra Real Nova. 
 
+Find Ibarra Real Nova at fonts.google.com. 
+
+Find OldBlackSans around the Web and at 
+
+
+
 Book title is set at top-center of each page. 
