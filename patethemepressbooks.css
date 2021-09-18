@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1em;
     padding-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 13.5pt;
+    font-size: 15pt;
     font-style: normal;
     font-weight: bold;
     line-height: 1.5em;
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1em;
     padding-bottom: 0;
     font-family: 'OldSansBlack', sans-serif;
-    font-size: 13pt;
+    font-size: 14pt;
     font-style: normal;
     font-weight: bold;
     line-height: 1.5em;
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 0;
-    font-family: 'OldSansBlack Underline', sans-serif;
+    font-family: 'OldSansBlack', sans-serif;
     font-size: 12.75pt;
     font-style: underline;
     font-weight: normal;
@@ -246,9 +246,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 0;
-    font-family: 'OldSansBlack Underline', sans-serif;
+    font-family: 'OldSansBlack', sans-serif;
     font-size: 12.25pt;
-    font-style: underline;
+    font-style: normal;
     font-weight: normal;
     line-height: 1.5em;
     text-align: left;
@@ -675,7 +675,7 @@ tr {
 
 .first-character, .firstcharacter {
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 15pt;
+  font-size: 250%;
   font-style: normal;
   font-weight: bold;
   line-height: 0.7em; }
@@ -793,7 +793,7 @@ aside, .aside {
 .pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right {
   display: inline-block;
   font-family: 'OldSansBlack', sans-serif;
-  font-size: 14pt;
+  font-size: 13pt;
   font-style: normal;
   font-weight: bold;
   hyphens: none;
@@ -803,7 +803,7 @@ aside, .aside {
   border-top: 0;
   border-bottom: 0;
   border-left: groove;
-  border-right: outset;
+  border-right: groove;
   padding-top: 0;
   padding-bottom: 0;
   page-break-inside: avoid;
@@ -817,13 +817,13 @@ aside, .aside {
   float: left;
   margin: 1em 1em 1em 1em;
   text-align: center;
-  width: 55%; }
+  width: 45%; }
 
 .pullquote-right, .pullquote--right {
   float: right;
   margin: 1em 1em 1em 1em;
   text-align: center;
-  width: 55%; }
+  width: 45%; }
 
 @supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
   .pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right {
@@ -3319,14 +3319,20 @@ meta[name="doi"] {
   @bottom-right {
     content: "" string(book-title) " - " string(part-title) "" '\A0\A0|\A0\A0' counter(page); } }
 @page part:first:left {
-  @bottom-left {
-    content: counter(page) '\A0\A0|\A0\A0' "" string(book-title) " - " string(part-title) ""; } }
+  @bottom-right {
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page part:left {
-  @bottom-left {
-    content: counter(page) '\A0\A0|\A0\A0' "" string(book-title) " - " string(part-title) ""; } }
+  @bottom-right {
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page part:right {
   @bottom-right {
-    content: "" string(book-title) " - " string(part-title) "" '\A0\A0|\A0\A0' counter(page); } }
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page chapter:first {
   @top {
     content: ''; }
@@ -3362,16 +3368,24 @@ meta[name="doi"] {
     content: ''; } }
 @page chapter:first:right {
   @bottom-right {
-    content: "" string(chapter-author) " - " string(section-title) "" '\A0\A0|\A0\A0' counter(page); } }
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page chapter:first:left {
-  @bottom-left {
-    content: counter(page) '\A0\A0|\A0\A0' "" string(chapter-author) " - " string(section-title) ""; } }
+  @bottom-right {
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page chapter:left {
-  @bottom-left {
-    content: counter(page) '\A0\A0|\A0\A0' "" string(book-title) " - " string(part-title) ""; } }
+  @bottom-right {
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page chapter:right {
   @bottom-right {
-    content: "" string(chapter-author) " - " string(section-title) "" '\A0\A0|\A0\A0' counter(page); } }
+    content: "" counter(page); } 
+  @bottom-left: {
+    content: "" string(chapter-author) " | " string(section-title); } }
 @page back-matter:first {
   @top {
     content: ''; }
@@ -3407,16 +3421,16 @@ meta[name="doi"] {
     content: ''; } }
 @page back-matter:first:right {
   @bottom-right {
-    content: "" string(book-title) " - Always read free at sareview.org." '\A0\A0|\A0\A0' counter(page); } }
+    content: "" string(book-title) " | sareview.org." '\A0\A0|\A0\A0' counter(page); } }
 @page back-matter:first:left {
   @bottom-left {
-    content: counter(page) '\A0\A0|\A0\A0' "" string(book-title) " - Always read free at sareview.org."; } }
+    content: counter(page) '\A0\A0|\A0\A0' "" string(book-title) " | sareview.org."; } }
 @page back-matter:left {
   @bottom-left {
     content: counter(page) '\A0\A0|\A0\A0' "" string(book-title) " - " string(section-title) ""; } }
 @page back-matter:right {
   @bottom-right {
-    content: "" string(book-title) " - Always read free at sareview.org." '\A0\A0|\A0\A0' counter(page); } }
+    content: "" string(book-title) " | sareview.org." '\A0\A0|\A0\A0' counter(page); } }
 
 #toc ul {
   line-height: 1.1em;
@@ -3446,7 +3460,7 @@ meta[name="doi"] {
 #toc .chapter-license {
   display: block; }
 #toc .front-matter {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'OldSansBlack', sans-serif;
   font-size: 13pt;
   font-style: normal;
   font-weight: normal;
